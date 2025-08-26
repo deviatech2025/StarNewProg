@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+}
+
+.profil_user {
+    border: 2px solid rgb(79, 77, 77);
+    background-color: white;
+    width: 200px;
+    border-radius: 5px;
+    position: absolute;
+    left: 85%;
+    top: 12%;
+    z-index: 4;
+}
+
+.visible {
+    display: none;
+}
+
+.profil_user a {
+    text-decoration-line: none;
+    font-size: 20px;
+    color: black;
+}
+
+.contener {
+    display: flex;
+}
+
+.sidebar {
+    min-width: 25vw;
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 40px 5px;
+    min-height: 100vh; 
+}
+
+#site_name {
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin: 15px 0;
+}
+.sidebar-menu button {
+    cursor: pointer;
+    background-color: #2563eb;
+    color:white;
+    border: none;
+    margin-left: 10px;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar-menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.sidebar-menu .active {
+    background-color: #2563eb;
+}
+
+.sidebar-menu a:hover {
+    background-color: #7c9ee6;
+    padding-left: 20px;
+}
+.icon-bar{
+    cursor: pointer;
+}
+
+main {
+    background-color: #F8F9FC;
+    width: 80%;
+}
+
+.header {
+   /* background-color: white;*/
+    font-weight: 900;
+    box-shadow: 2px 2px 2px black;
+    margin: 0px 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .input {
+    width: 35vw;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: 2px 1px 1px black;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    color: blue;
+    font-size: 70px;
+}
+
+.header .input i {
+   /* margin: 20px 0px 0px 10px;*/
+   position: absolute;
+   top :20px;
+   left: 5px;
+}
+
+.header .input input {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 55px;
+    position: absolute;
+    font-size: 15px;
+    top:0;
+    left: 25px;
+    border-radius: 50px;
+}
+
+.header .profil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .profil img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/*
+=================================
+    Page 404
+=================================
+*/
+#op {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.oop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#oops {
+    font-size: 100px;
+    font-weight: 900;
+    background: linear-gradient(180deg, red,  #ff1493, #4b0082,  #1a1a4d);
+    background-clip: text;
+    color: transparent;
+}
+#op_h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+#op_h5{
+    font-weight: normal;
+    text-align: center;
+}
+#btnx {
+    margin-top: 50px;
+    background-color: blue;
+    color: white;
+    height: 70px;
+    width: 200px;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+}
+#btnx:hover {
+    background-color: red;
+    transition: all 0.5s;
+}
+#op_img {
+    width: 180px ;
+    height:180px;
+}
+@media screen and (max-width:1000px) {
+    #oops{
+        font-size: 120px;
+    }
+    #op_img {
+        width:150px ;
+        height:150px;
+    }
+}
+a {
+    color: white;
+    text-decoration-line: none;
+}
+@media screen and (max-width:870px) {
+    #oops{
+        font-size: 70px;
+    }
+    .oop {
+        margin-bottom: 15px;
+    }
+    #op_h3 {
+        font-size: 20px;
+    }
+    #op_h5{
+        font-size: 20px;
+    }
+    #op_img {
+        width:70px ;
+        height:70px;
+    }
+    #btnx  {
+        font-size: 13px;
+        width: 150px;
+    }
+}
+@media screen and (max-width:485px) {
+    #oops{
+        font-size: 50px;
+    }
+    .oop {
+        margin-bottom: 10px;
+    }
+    #op_h3 {
+        font-size: 12px;
+    }
+    #op_h5{
+        font-size: 12px;
+    }
+    #op_img {
+        width:70px ;
+        height:70px;
+    }
+    #btnx  {
+        font-size: 12px;
+        width: 150px;
+    } 
+
+     table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        background: #fff;
+      }
+
+      td {
+        position: relative;
+        padding-left: 50%;
+        border: none;
+        border-bottom: 1px solid #eee;
+      }
+
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 12px;
+        font-weight: bold;
+        color: #555;
+      }
+      .logo{
+        display: none;
+      }
+      .boite div p {
+        font-size: 12px !important;
+      }
+      .h3{
+        font-size: 1.1em !important;
+      }
+      .h2{
+        font-size: 1.1em;
+      }
+}
+
+
+/*
+=================================
+    End Page 404
+=================================
+*/
+/*
+=================================
+    animations
+=================================
+*/
+main .boite :hover{
+ transform: scale(0.9 ) translateX(2px);
+ background-color:aliceblue;
+ transition: all 2s;
+
+}
+
+/*
+===========================================
+start responsive
+*/
+@media screen and (max-width:850px) {
+    #site_name{
+        font-size: 25px !important;
+    }
+    .table-responsive{
+        font-size: 0.8em;
+    }
+    .icon-bar{
+        display: block !important;
+    }
+    .sidebar{
+        position: absolute !important;
+        top: 100px !important;
+        z-index: 6;
+        max-width: 300px !important;
+        display: none;
+        min-height: 250px !important;
+        
+    }
+    main{
+        width: 100% !important;
+    }
+.profil_user {
+    left: 66% !important;
+    top:15.5%;
+}
+.visi{
+    display: block !important;
+}
+
+}
+@media screen and (max-width:630px){
+    .profil_user {
+    left: 44% !important;
+    top:15.5%;
+    width: 150px;
+    
+}
+.profil_user label,a
+    {
+   font-size: 15px !important;
+    }
+}
+
+
+
+
+
